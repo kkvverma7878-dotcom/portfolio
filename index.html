@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080a09">
+  <meta name="description" content="Krishna Kumar — Graphic Design Portfolio 2026. A collection of selected creative work.">
+  <meta property="og:title" content="Krishna Kumar | Graphic Design Portfolio 2026">
+  <meta property="og:description" content="Explore 18 original portfolio slides featuring graphic design, branding, packaging, and creative campaigns.">
+  <meta property="og:type" content="website">
+  <title>Krishna Kumar | Graphic Design Portfolio 2026</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preload" as="image" href="images/slide-01.png">
+  <style>
+    :root { color-scheme: dark; --lime:#baff00; --back:#080a09; --white:#f5f6f4; }
+    *, *::before, *::after { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-snap-type:y mandatory; scrollbar-width:thin; scrollbar-color:#4b5b3b var(--back); }
+    body { background:var(--back); color:var(--white); margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; overflow-x:hidden; }
+    button { font:inherit; }
+    .skip-link { position:fixed; z-index:999; left:16px; top:-100px; padding:12px; background:var(--lime); color:#111; }
+    .skip-link:focus-visible { top:10px; }
+    .slide {
+       position:relative; height:100svh; width:100%; overflow:hidden;
+       scroll-snap-align:start; scroll-snap-stop:always;
+       display:flex; justify-content:center; align-items:center;
+       padding:14px 22px 86px;
+       isolation:isolate;
+    }
+    .slide__art {
+       display:block; width:auto; height:auto;
+       max-width:100%; max-height:100%; aspect-ratio:16/9;
+       object-fit:contain;
+       box-shadow:none;
+       opacity:0; transform:translateY(20px);
+       transition:opacity .65s ease, transform .75s cubic-bezier(.22,1,.36,1);
+    }
+    .slide.is-visible .slide__art { opacity:1; transform:translateY(0); }
+    .ui {
+       position:fixed; z-index:20; bottom:max(12px,env(safe-area-inset-bottom));
+       left:50%; transform:translateX(-50%);
+       border:1px solid rgba(186,255,0,.33);
+       background:rgba(9,12,10,.9);
+       -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px);
+       padding:7px 10px; border-radius:999px; display:flex;
+       align-items:center; gap:11px; max-width:calc(100vw - 22px);
+       box-shadow:0 12px 42px rgba(0,0,0,.35);
+    }
+    .ui__button {
+      flex:none; display:grid; place-items:center;
+      height:34px; width:34px; border:0; border-radius:50%;
+      color:var(--white); background:rgba(255,255,255,.08);
+      cursor:pointer; transition:background .2s,color .2s;
+    }
+    .ui__button:hover { color:#080a09; background:var(--lime); }
+    .ui__button:focus-visible, .ui__dot:focus-visible { outline:2px solid var(--lime); outline-offset:3px; }
+    .ui__button:disabled { opacity:.25; cursor:not-allowed; background:rgba(255,255,255,.04); color:var(--white); }
+    .ui__count {
+       flex:none; color:var(--lime); white-space:nowrap;
+       font-size:12px; letter-spacing:.08em; font-variant-numeric:tabular-nums;
+       font-weight:750;
+    }
+    .ui__dots { display:flex; gap:4px; align-items:center; max-width:42vw; overflow-x:auto; padding:8px 3px; scrollbar-width:none; }
+    .ui__dots::-webkit-scrollbar { display:none; }
+    .ui__dot {
+       flex:none; border:0; width:7px; height:7px; padding:0;
+       border-radius:50%; cursor:pointer; background:#55614d;
+       transition:width .25s,background .25s,border-radius .25s;
+    }
+    .ui__dot[aria-current="true"] { background:var(--lime); width:20px; border-radius:99px; }
+    .ui__fullscreen { margin-left:2px; }
+    .sr-only { position:absolute!important; height:1px!important; width:1px!important;
+       overflow:hidden!important; clip:rect(0,0,0,0)!important; white-space:nowrap!important; }
+    @media(max-width:600px) {
+       .slide { padding:10px 6px 76px; }
+       .ui { gap:7px; padding:6px 8px; }
+       .ui__dots { gap:4px; max-width:36vw; }
+       .ui__button { width:32px; height:32px; }
+       .ui__fullscreen { display:none; }
+       html { scroll-snap-type:y proximity; }
+    }
+    @media(prefers-reduced-motion:reduce) {
+       html { scroll-behavior:auto; }
+       .slide__art { opacity:1; transform:none; transition:none; }
+       .ui__button, .ui__dot { transition:none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#slide-01">Skip to portfolio</a>
+  <main id="portfolio" aria-label="Krishna Kumar's original 18-slide portfolio">
+    <section class="slide is-visible" id="slide-01" aria-label="Slide 1 of 18: Portfolio Cover">
+      <img class="slide__art" src="images/slide-01.png" alt="Portfolio slide 01: Portfolio Cover. Original design unchanged." width="1920" height="1080" fetchpriority="high" loading="eager" draggable="false">
+    </section>
+    <section class="slide" id="slide-02" aria-label="Slide 2 of 18: About Me">
+      <img class="slide__art" src="images/slide-02.png" alt="Portfolio slide 02: About Me. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-03" aria-label="Slide 3 of 18: Skills & Expertise">
+      <img class="slide__art" src="images/slide-03.png" alt="Portfolio slide 03: Skills & Expertise. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-04" aria-label="Slide 4 of 18: Table of Content">
+      <img class="slide__art" src="images/slide-04.png" alt="Portfolio slide 04: Table of Content. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-05" aria-label="Slide 5 of 18: Social Media Design">
+      <img class="slide__art" src="images/slide-05.png" alt="Portfolio slide 05: Social Media Design. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-06" aria-label="Slide 6 of 18: Travel & Education">
+      <img class="slide__art" src="images/slide-06.png" alt="Portfolio slide 06: Travel & Education. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-07" aria-label="Slide 7 of 18: Real Estate & Digital">
+      <img class="slide__art" src="images/slide-07.png" alt="Portfolio slide 07: Real Estate & Digital. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-08" aria-label="Slide 8 of 18: Festival Creative">
+      <img class="slide__art" src="images/slide-08.png" alt="Portfolio slide 08: Festival Creative. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-09" aria-label="Slide 9 of 18: Advertisement & Promotional">
+      <img class="slide__art" src="images/slide-09.png" alt="Portfolio slide 09: Advertisement & Promotional. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-10" aria-label="Slide 10 of 18: Banner Design">
+      <img class="slide__art" src="images/slide-10.png" alt="Portfolio slide 10: Banner Design. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-11" aria-label="Slide 11 of 18: Carousel Design">
+      <img class="slide__art" src="images/slide-11.png" alt="Portfolio slide 11: Carousel Design. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-12" aria-label="Slide 12 of 18: Noriya Branding">
+      <img class="slide__art" src="images/slide-12.png" alt="Portfolio slide 12: Noriya Branding. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-13" aria-label="Slide 13 of 18: Polar Sip Branding">
+      <img class="slide__art" src="images/slide-13.png" alt="Portfolio slide 13: Polar Sip Branding. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-14" aria-label="Slide 14 of 18: Music Planet Branding">
+      <img class="slide__art" src="images/slide-14.png" alt="Portfolio slide 14: Music Planet Branding. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-15" aria-label="Slide 15 of 18: Logo Design">
+      <img class="slide__art" src="images/slide-15.png" alt="Portfolio slide 15: Logo Design. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-16" aria-label="Slide 16 of 18: Packaging Design">
+      <img class="slide__art" src="images/slide-16.png" alt="Portfolio slide 16: Packaging Design. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-17" aria-label="Slide 17 of 18: Packaging Design Collection">
+      <img class="slide__art" src="images/slide-17.png" alt="Portfolio slide 17: Packaging Design Collection. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+    <section class="slide" id="slide-18" aria-label="Slide 18 of 18: Thank You & Contact">
+      <img class="slide__art" src="images/slide-18.png" alt="Portfolio slide 18: Thank You & Contact. Original design unchanged." width="1920" height="1080" loading="lazy" decoding="async" draggable="false">
+    </section>
+  </main>
+  <nav class="ui" aria-label="Portfolio navigation">
+    <button class="ui__button" type="button" id="previous" aria-label="Previous slide" title="Previous slide">←</button>
+    <span class="ui__count" id="count" role="status" aria-live="polite">01 / 18</span>
+    <div class="ui__dots" id="dots" aria-label="Jump to slide"></div>
+    <button class="ui__button" type="button" id="next" aria-label="Next slide" title="Next slide">→</button>
+    <button class="ui__button ui__fullscreen" type="button" id="fullscreen" aria-label="Toggle fullscreen" title="Toggle fullscreen">⛶</button>
+  </nav>
+  <script>
+  (() => {
+    "use strict";
+    const slides = Array.from(document.querySelectorAll(".slide"));
+    const dots = document.getElementById("dots");
+    const counter = document.getElementById("count");
+    const prev = document.getElementById("previous");
+    const next = document.getElementById("next");
+    const fullscreen = document.getElementById("fullscreen");
+    const titles = ["Portfolio Cover", "About Me", "Skills & Expertise", "Table of Content", "Social Media Design", "Travel & Education", "Real Estate & Digital", "Festival Creative", "Advertisement & Promotional", "Banner Design", "Carousel Design", "Noriya Branding", "Polar Sip Branding", "Music Planet Branding", "Logo Design", "Packaging Design", "Packaging Design Collection", "Thank You & Contact"];
+    let active = 0;
+
+    const navigate = (idx, behavior = "smooth") => {
+      const i = Math.max(0, Math.min(slides.length - 1, idx));
+      slides[i].scrollIntoView({ behavior, block: "start" });
+    };
+
+    slides.forEach((slide, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "ui__dot";
+      dot.title = `Slide ${i+1}: ${titles[i]}`;
+      dot.setAttribute("aria-label", `Go to slide ${i+1}: ${titles[i]}`);
+      dot.addEventListener("click", () => navigate(i));
+      dots.appendChild(dot);
+    });
+
+    function setActive(i) {
+      if(i < 0 || i >= slides.length) return;
+      active = i;
+      counter.textContent = `${String(i+1).padStart(2,"0")} / ${slides.length}`;
+      prev.disabled = i === 0;
+      next.disabled = i === slides.length - 1;
+      dots.querySelectorAll(".ui__dot").forEach((dot, j) => {
+        if (j === i) {
+          dot.setAttribute("aria-current", "true");
+          if (dot.scrollIntoView) dot.scrollIntoView({ behavior: "smooth", inline: "nearest", block: "nearest" });
+        } else {
+          dot.removeAttribute("aria-current");
+        }
+      });
+      if (window.history && window.history.replaceState) {
+        history.replaceState(null, "", `#slide-${String(i+1).padStart(2,"0")}`);
+      }
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      for(const entry of entries) {
+        if(entry.isIntersecting) entry.target.classList.add("is-visible");
+      }
+    }, { threshold: .08 });
+    slides.forEach(slide => observer.observe(slide));
+
+    let ticking = false;
+    function trackScroll() {
+      if(ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const center = window.innerHeight / 2;
+        let closest = 0, dist = Infinity;
+        slides.forEach((slide, i) => {
+          const r = slide.getBoundingClientRect();
+          const d = Math.abs((r.top + r.bottom) / 2 - center);
+          if(d < dist) { dist=d; closest=i; }
+        });
+        if(closest !== active) setActive(closest);
+        ticking = false;
+      });
+    }
+    window.addEventListener("scroll", trackScroll, {passive:true});
+    window.addEventListener("resize", trackScroll, {passive:true});
+
+    prev.addEventListener("click", () => navigate(active - 1));
+    next.addEventListener("click", () => navigate(active + 1));
+    document.addEventListener("keydown", e => {
+      const tag = document.activeElement && document.activeElement.tagName;
+      if(e.altKey || e.ctrlKey || e.metaKey || tag === "INPUT" || tag === "TEXTAREA") return;
+      if(e.key === "ArrowRight" || e.key === "PageDown") { e.preventDefault(); navigate(active + 1); }
+      else if(e.key === "ArrowLeft" || e.key === "PageUp") { e.preventDefault(); navigate(active - 1); }
+      else if(e.key === "Home") { e.preventDefault(); navigate(0); }
+      else if(e.key === "End") { e.preventDefault(); navigate(slides.length - 1); }
+    });
+
+    fullscreen.addEventListener("click", () => {
+      if (!document.fullscreenElement && document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+      else if (document.exitFullscreen) document.exitFullscreen();
+    });
+
+    setActive(0);
+    const initial = window.location.hash;
+    if(/^#slide-(0[1-9]|1[0-8])$/.test(initial)) {
+      const i = parseInt(initial.slice(-2), 10) - 1;
+      requestAnimationFrame(() => navigate(i, "instant"));
+      setActive(i);
+    }
+    trackScroll();
+  })();
+  </script>
+</body>
+</html>
